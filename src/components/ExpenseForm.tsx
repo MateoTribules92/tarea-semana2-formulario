@@ -13,21 +13,28 @@ export const ExpenseForm = ({ setDatosPaciente }: Props) => {
   const [altura, setAltura] = useState<number>(1.68); // Altura inicial
 
   // Función para manejar el cálculo del IMC y pasar los datos al componente padre
-  const handleCalcularIMC = () => {
-    if (!nombre || peso <= 0 || altura <= 0) {
-      alert("Por favor, completa todos los campos correctamente.");
-      return;
-    }
+const handleCalcularIMC = () => {
+  // Verificar los valores de las variables
+  console.log("Nombre:", nombre);
+  console.log("Peso:", peso);
+  console.log("Altura:", altura);
 
-    // Pasa los datos a la app principal
-    setDatosPaciente(nombre, peso, altura);
-  };
+  // Verifica que nombre, peso y altura sean válidos
+  if (!nombre || peso <= 0 || altura <= 0) {
+    alert("Por favor, completa todos los campos correctamente.");
+    return;
+  }
+
+  // Si los valores son válidos, realiza el cálculo
+  setDatosPaciente(nombre, peso, altura);
+};
 
   return (
     <View style={formularioStyles.tarjeta}>
       <Text style={formularioStyles.seccionTitulo}>Nuevo Registro de IMC</Text>
 
       {/* Campo de texto para el nombre */}
+      <Text style={formularioStyles.etiqueta}>Nombre</Text>
       <TextInput
         placeholder="Nombre"
         value={nombre}

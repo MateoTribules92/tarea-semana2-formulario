@@ -23,6 +23,7 @@ const App = () => {
 
   // Función para agregar al historial de IMC
   const addIMC = (nuevoRegistro: RegistroIMC) => {
+    console.log("Nuevo registro agregado:", nuevoRegistro);
     setHistorialIMC([...historialIMC, nuevoRegistro]);
   };
 

@@ -16,6 +16,8 @@ export const ExpenseLists = ({ historial, deleteIMC, clearHistorial }: Props) =>
       <View style={[listaStyles.tarjeta, { backgroundColor: "#F7FAFC", padding: 20 }]}>
         <Text style={listaStyles.seccionTitulo}>HISTORIAL DE IMC</Text>
         
+       
+
         {historial.length === 0 ? (
           <Text style={listaStyles.textoVacio}>
             Aún no hay registros. ¡Calcula el primero!

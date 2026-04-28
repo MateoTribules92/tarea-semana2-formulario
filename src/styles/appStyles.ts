@@ -135,10 +135,16 @@ export const totalRegistroStyles = StyleSheet.create({
 
 export const listaStyles = StyleSheet.create({
   contenedor: {
-    marginTop: 20,
-    padding: 10,
-    backgroundColor: "#fff",
-    borderRadius: 10,
+     backgroundColor: COLORS.blanco,
+    marginHorizontal: 16,
+    borderRadius: 16,
+    padding: 20,
+    marginBottom: 16,
+    shadowColor: "#000",
+    shadowOffset: { width: 0, height: 2 },
+    shadowOpacity: 0.08,
+    shadowRadius: 8,
+    elevation: 3,
   },
   tarjeta: {
     padding: 20,
@@ -154,9 +160,12 @@ export const listaStyles = StyleSheet.create({
     elevation: 3, // Sombra para dispositivos Android
   },
   seccionTitulo: {
-    fontSize: 20,
-    fontWeight: "bold",
-    marginBottom: 10,
+    fontSize: 13,
+    fontWeight: "700",
+    color: COLORS.textoGris,
+    letterSpacing: 1,
+    textTransform: "uppercase",
+    marginBottom: 14,
   },
   item: {
     flexDirection: "row",  // Mantenemos los elementos en fila horizontal
