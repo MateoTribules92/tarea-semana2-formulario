@@ -35,9 +35,6 @@ export const TotalExpenses = ({ total, quantity, clearHistorial, historialIMC }:
         </View>
       </View>
 
-      <TouchableOpacity onPress={clearHistorial} style={totalStyles.botonLimpiar}>
-        <Text style={totalStyles.botonLimpiarTexto}>Limpiar todo</Text>
-      </TouchableOpacity>
     </View>
   );
 };

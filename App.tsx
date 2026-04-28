@@ -81,7 +81,7 @@ const App = () => {
         historialIMC={historialIMC}
       />
 
-      <ExpenseLists historial={historialIMC} deleteIMC={deleteIMC} />
+      <ExpenseLists historial={historialIMC} deleteIMC={deleteIMC} clearHistorial={clearHistorial} />
     </ScrollView>
   );
 };

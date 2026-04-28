@@ -135,27 +135,33 @@ export const totalRegistroStyles = StyleSheet.create({
 
 export const listaStyles = StyleSheet.create({
   contenedor: {
-    marginHorizontal: 16,
-    marginBottom: 40,
+    marginTop: 20,
+    padding: 10,
+    backgroundColor: "#fff",
+    borderRadius: 10,
+  },
+  tarjeta: {
+    padding: 20,
+    marginBottom: 10,
+    backgroundColor: "#F7FAFC", // Fondo suave para la tarjeta
+    borderRadius: 10,
+    borderWidth: 1,
+    borderColor: "#E5E7EB",
+    shadowColor: "#000",
+    shadowOffset: { width: 0, height: 2 },
+    shadowOpacity: 0.1,
+    shadowRadius: 5,
+    elevation: 3, // Sombra para dispositivos Android
   },
   seccionTitulo: {
-    fontSize: 13,
-    fontWeight: "700",
-    color: COLORS.textoGris,
-    letterSpacing: 1,
-    textTransform: "uppercase",
-    marginBottom: 12,
-  },
-  textoVacio: {
-    textAlign: "center",
-    color: "#aaa",
-    fontSize: 14,
-    paddingVertical: 30,
+    fontSize: 20,
+    fontWeight: "bold",
+    marginBottom: 10,
   },
   item: {
-    flexDirection: "row",
-    alignItems: "center",
-    backgroundColor: COLORS.blanco,
+    flexDirection: "row",  // Mantenemos los elementos en fila horizontal
+    alignItems: "center",  // Centra los elementos verticalmente
+    backgroundColor: "#fff", // Color de fondo blanco para el item
     borderRadius: 12,
     padding: 14,
     marginBottom: 8,
@@ -166,36 +172,51 @@ export const listaStyles = StyleSheet.create({
     shadowRadius: 4,
     gap: 10,
   },
-  itemBarra: {
-    width: 4,
-    height: 40,
-    borderRadius: 4,
-  },
   itemEmoji: {
     fontSize: 22,
   },
   itemInfo: {
-    flex: 1,
+    flex: 1,  // Hace que el contenido ocupe el espacio disponible
+    marginLeft: 10,
   },
   itemDescripcion: {
-    fontSize: 15,
-    fontWeight: "600",
-    color: COLORS.textoOscuro,
+    fontSize: 16,
+    fontWeight: "500",
+    color: "#333",
   },
   itemCategoria: {
-    fontSize: 12,
-    color: COLORS.textoGris,
-    marginTop: 2,
-  },
-  itemMonto: {
-    fontSize: 16,
-    fontWeight: "700",
-    color: COLORS.textoOscuro,
+    fontSize: 14,
+    fontStyle: "italic",
+    color: "#777",
   },
   itemEliminar: {
-    fontSize: 14,
-    color: "#ccc",
+    color: "#EF4444", // Rojo para el botón eliminar
+    fontSize: 18,
+    fontWeight: "bold",
     paddingLeft: 4,
+  },
+  botonLimpiar: {
+    backgroundColor: "#EF4444", // Rojo para el botón "Limpiar"
+    paddingVertical: 10,
+    borderRadius: 5,
+    alignItems: "center",
+    justifyContent: "center",
+    marginTop: 20,
+  },
+  botonLimpiarTexto: {
+    color: "#fff",
+    fontSize: 16,
+    fontWeight: "bold",
+  },
+  textoVacio: {
+    textAlign: "center",
+    color: "#777",
+    fontSize: 16,
+  },
+   itemBarra: {
+    width: 4,
+    height: 40,
+    borderRadius: 4,
   },
 });
 
@@ -220,9 +241,12 @@ export const totalStyles = StyleSheet.create({
     elevation: 3, // Para darle sombra en dispositivos Android
   },
   seccionTitulo: {
-    fontSize: 20,
-    fontWeight: "bold",
-    marginBottom: 10,
+    fontSize: 13,
+    fontWeight: "700",
+    color: COLORS.textoGris,
+    letterSpacing: 1,
+    textTransform: "uppercase",
+    marginBottom: 14,
   },
   estadisticasContainer: {
     flexDirection: "row",
